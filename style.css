@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: rgb(87, 143, 228);
+    
+}
+.navbar{
+    background-color: #143D60;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+   
+}
+.navbar li{
+    margin-right: 20px;
+    
+  
+
+}
+.navbar a{
+   text-decoration: none;
+   color: white;
+   cursor: pointer;
+}
+.header{
+    background-image: linear-gradient(to bottom, #F16767, #EB5B00);
+    color: #ffff;
+    padding: 50px;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    left: 2%;
+    
+}
+.main > div{
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #EF9651;
+    border: 1px solid rgb(82, 81, 81);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+ }
+ .footer{
+    background-color: #86858b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #34495e;
+    margin-top: 20px;
+ }
+ .slider{
+    width: 100%;
+    height: 400px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+ }
+ .slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+ }
+ .slides img{
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+ }
+ button{
+    
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    background-color: #96999c;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 12px;
+
+ }
+ button:hover{
+    background-color: rgb(129, 164, 230);
+ 
+ }
+ @keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-25%);
+    }
+    45%{
+        transform: translateX(-25%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    70%{
+        transform: translateX(-50%);
+    }
+    75%{
+        transform: translateX(-75%);
+    }
+    95%{
+        transform: translateX(-75%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+ }
+ @media only screen and (max-width: 600px) { .main > div { width: 100%; } }
